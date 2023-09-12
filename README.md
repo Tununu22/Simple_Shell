@@ -2,24 +2,7 @@
 ======================
 
 -   By Julien Barbier
--   Project to be done in teams of 2 people (your team: Pericles Adjovi, Emmanuel Udeji
-
-Concepts
---------
-
-*For this project, students are expected to look at these concepts:*
-
--   [Everything you need to know to start coding your own shell](https://alx-intranet.hbtn.io/concepts/64)
--   [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
-
-Background Context
-------------------
-
-Write a simple UNIX command interpreter.
-
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/235/shell.jpeg)
-
-*^ "The Gates of Shell", by [Spencer Cheng](https://alx-intranet.hbtn.io/rltoken/AtYRSM03vJDrko9xHodxFQ "Spencer Cheng"), featuring [Julien Barbier](https://alx-intranet.hbtn.io/rltoken/-ezXgcyfhc8qU1DeUInLUA "Julien Barbier")*
+-   Project to be done in teams of 2 people (your team: Michelle Cherotich, Scott Ouko)
 
 Resources
 ---------
@@ -37,8 +20,6 @@ Resources
 
 Learning Objectives
 -------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/4mHp8pZKm5sjL4-TEJEKeg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -71,10 +52,6 @@ Requirements
 -   No more than 5 functions per file
 -   All your header files should be include guarded
 -   Use system calls only when you need to ([why?](https://alx-intranet.hbtn.io/rltoken/EU7B1PTSy14INnZEShpobQ "why?"))
-
-### GitHub
-
-**There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.**
 
 More Info
 ---------
@@ -179,38 +156,20 @@ hsh main.c shell.c test_ls_2
 $
 
 ```
-
-### Checks
-
-The Checker will be released at the end of the project (1-2 days before the deadline). We **strongly** encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task `8\. Test suite`.
-
 Tasks
 -----
 
-### 0\. README, man, AUTHORS
+### 0\. Betty would be proud
 
 mandatory
 
--   Write a `README`
--   Write a `man` for your shell.
--   You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://alx-intranet.hbtn.io/rltoken/UL8J3kgl7HBK_Z9iBL3JFg "Docker")
-
-**Repo:**
-
--   GitHub repository: `simple_shell`
--   File: `README.md, man_1_simple_shell, AUTHORS`
-
-### 1\. Betty would be proud
-
-mandatory
-
-Write a beautiful code that passes the Betty checks
+-   Write a beautiful code that passes the Betty checks
 
 **Repo:**
 
 -   GitHub repository: `simple_shell`
 
-### 2\. Simple shell 0.1
+### 1\. Simple shell 0.1
 
 mandatory
 
@@ -235,6 +194,8 @@ You don't have to:
 -   handle special characters : `"`, `'`, ```, `\`, `*`, `&`, `#`
 -   be able to move the cursor
 -   handle commands with arguments
+
+'execve' will be the core part of your Shell, don’t forget to pass the environ to it…
 
 ```
 julien@ubuntu:~/shell$ ./shell
@@ -263,7 +224,7 @@ env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat 
 
 -   GitHub repository: `simple_shell`
 
-### 3\. Simple shell 0.2
+### 2\. Simple shell 0.2
 
 mandatory
 
@@ -275,7 +236,7 @@ Simple shell 0.1 +
 
 -   GitHub repository: `simple_shell`
 
-### 4\. Simple shell 0.3
+### 3\. Simple shell 0.3
 
 mandatory
 
@@ -308,7 +269,7 @@ julien@ubuntu:~/shell$
 
 -   GitHub repository: `simple_shell`
 
-### 5\. Simple shell 0.4
+### 4\. Simple shell 0.4
 
 mandatory
 
@@ -322,7 +283,7 @@ Simple shell 0.3 +
 
 -   GitHub repository: `simple_shell`
 
-### 6\. Simple shell 1.0
+### 5\. Simple shell 1.0
 
 mandatory
 
@@ -353,20 +314,3 @@ julien@ubuntu:~/shell$
 **Repo:**
 
 -   GitHub repository: `simple_shell`
-
-### 7\. What happens when you type `ls -l *.c` in the shell
-
-mandatory
-
-Write a blog post describing step by step what happens when you type `ls -l *.c` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
-
--   Have at least one picture, at the top of the blog post
--   Publish your blog post on Medium or LinkedIn
--   Share your blog post at least on LinkedIn
--   Only one blog post by team
--   The blog post must be done and published before the first deadline (it will be part of the manual review)
--   Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
-
-When done, please add all urls below (blog post, LinkedIn post, etc.)
-
-#### Add URLs here:

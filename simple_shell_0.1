@@ -1,1 +1,36 @@
+#include "Simple_shell_h"
+#include <stdio.h>
+
+/**
+ * main - writing a UNIX command line interpreter that
+ * Displays a prompt and waits for thhe user to type a command
+ * Alwways return 0 
+ */
+
+int main() {
+    char input[100];  // Buffer to store user input
+
+    while (1) {
+        printf("Type a command (or 'exit' to quit):\n");  // Added new line '\n' here
+        
+        if (fgets(input, sizeof(input), stdin) == NULL) {
+            printf("Error reading input.\n");
+            break;
+        }
+
+        // Remove the new line character at the end of the input
+        input[strcspn(input, "\n")] = '\0';
+
+        // Check if the user wants to exit
+        if (strcmp(input, "exit") == 0) {
+            printf("Goodbye!\n");
+            break;
+        }
+
+        // Look at the user's command and process it
+        printf("You entered: %s\n", input);
+    }
+
+    return 0;
+}
 

@@ -1,3 +1,4 @@
+#include <Simple_shell.h>
 #include <stdio.h>
 #include <unistd.h>
 
@@ -16,3 +17,6 @@ int main(void)
 
 	return 0;
 }
+=======
+
+>>>>>>> 0ed282ca21ff6293707868a8cfd7a72b4aa9dbcf
